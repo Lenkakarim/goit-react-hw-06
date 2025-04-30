@@ -6,7 +6,7 @@
   max-width: 340px;
   padding: 20px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -28,6 +28,9 @@
   min-width: 300px;
 }
 
+.err {
+  color: tomato;
+}
 .btn {
   padding: 10px 15px;
   max-width: 200px;
@@ -35,8 +38,12 @@
   border-radius: 5px;
   border: none;
   color: aliceblue;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.err {
-  color: tomato;
+.btn:hover {
+  background-color: darkgray;
+  transform: scale(1.05);
 }
